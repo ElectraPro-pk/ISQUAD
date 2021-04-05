@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".user_profile">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="start"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18dp"
+            android:text="USER"
+            android:layout_gravity="end|center_vertical"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15dp"
+        />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15dp"
+            />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:text="Edit Profile"
+                android:onClick="EditProfile"
+                android:textColor="@color/light"
+                android:background="@drawable/btn_round_white"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="75dp"
+                android:background="@drawable/menu_round"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="2.5dp">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></Space>
+
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></Space>
+
+                <ImageButton
+
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:onClick="cart"
+                    android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></Space>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:scaleX="1.1"
+                    android:scaleY="1.1"
+                    android:onClick="Home"
+                    android:src="@drawable/ic_baseline_home_24" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></Space>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleX="0.9"
+                    android:onClick="chat"
+                    android:scaleY="0.9"
+                    android:src="@drawable/ic_baseline_message_24"
+                    android:translationY="1dp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></Space>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="toNotification"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_notifications_24" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></Space>
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

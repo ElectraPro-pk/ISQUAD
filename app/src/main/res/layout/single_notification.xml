@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/notification_parent_layout"
+    android:padding="4dp">
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textDirection="firstStrongLtr"
+            android:text="NOTIFICATIONS"
+            android:textColor="@color/primary"
+            android:autoSizeMinTextSize="8dp"
+            android:autoSizeMaxTextSize="10dp"
+            android:textSize="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@drawable/hr"
+            android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

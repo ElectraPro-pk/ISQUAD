@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "115511741247",
+    "project_id": "isquad-8151d",
+    "storage_bucket": "isquad-8151d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115511741247:android:c6e1d17d760e14bc58618a",
+        "android_client_info": {
+          "package_name": "uk.com.v3softech.online.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115511741247-5otd8ddpeugnkfjsalvmgqc814bnme97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnwh6iYTIwTFbqzbCi3ngCu6Vv_UGOUko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115511741247-5otd8ddpeugnkfjsalvmgqc814bnme97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

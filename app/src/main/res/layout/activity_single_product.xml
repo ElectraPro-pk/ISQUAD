@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".singleProduct">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_market_bg">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_motherboard" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center_horizontal"
+                    android:padding="1dp"
+                    android:text="Product Name"
+                    android:textColor="@color/mate"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/pr_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="1200"
+                    android:textColor="@color/light"
+                    android:textSize="18dp" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Description"
+                android:textColor="@color/mate"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/light"
+                android:textSize="15dp"
+
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fitsSystemWindows="true"
+                    android:gravity="center_horizontal">
+
+                    <Button
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/btn_round"
+                        android:fontFamily="@font/poppins_bold"
+                        android:onClick="cancel"
+                        android:padding="10dp"
+                        android:text="Back"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_round"
+                        android:backgroundTint="@color/primary"
+                        android:fontFamily="@font/poppins_bold"
+                        android:onClick="addToCart"
+                        android:padding="10dp"
+                        android:text="Add to Cart"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/remove"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_round"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:fontFamily="@font/poppins_bold"
+                        android:onClick="removeFromCart"
+                        android:padding="10dp"
+                        android:text="Remove from Cart"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+
+                </TableRow>
+
+            </TableLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/menu_round"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2.5dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="profile"
+            android:src="@drawable/ic_baseline_account_circle_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="cart"
+            android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:onClick="Home"
+            android:src="@drawable/ic_baseline_home_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@android:color/transparent"
+            android:onClick="chat"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:src="@drawable/ic_baseline_message_24"
+            android:translationY="1dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@android:color/transparent"
+            android:onClick="toNotification"
+            android:src="@drawable/ic_baseline_notifications_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

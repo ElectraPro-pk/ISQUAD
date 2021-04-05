@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".notifications">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@color/themeRedLight"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_vector_test"
+            android:background="@android:color/transparent"
+            android:layout_gravity="start|center_vertical"
+            android:clickable="true"
+            android:layout_marginStart="10dp"
+            android:onClick="back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light"
+            android:layout_gravity="center"
+            android:text="Notifications"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20dp"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:background="@color/mate"
+    android:layout_height="match_parent">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/noti"/>
+
+
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>

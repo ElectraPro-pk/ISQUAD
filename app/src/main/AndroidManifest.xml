@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="uk.com.v3softech.online.store">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lago"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/lago"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:replace="allowBackup, label">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value"
+            />
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <activity android:name=".others"></activity>
+        <activity android:name=".accessories" />
+        <activity android:name=".editProfile" />
+        <activity android:name=".notifications" />
+        <activity android:name=".chat" />
+        <activity android:name=".success" />
+        <activity android:name=".singleProduct" />
+        <activity android:name=".yourCart" />
+        <activity android:name=".build" />
+        <activity android:name=".user_profile" />
+        <activity android:name=".search_result" />
+        <activity android:name=".Main_Market" />
+        <activity android:name=".builtbt" />
+        <activity android:name=".CustomBuild" />
+        <activity android:name=".MainScreenForOptions" />
+        <activity android:name=".RegisterForm" />
+        <activity android:name=".CodeVerification" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_get_it_built"
+    tools:context=".MainScreenForOptions">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/abc_vector_test"
+        android:background="@drawable/btn_round"
+        android:clickable="true"
+        android:onClick="Logout"
+        android:translationY="64dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-0.2in"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="2.5in"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_round"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="CustomPC"
+            android:text="Build your Own PC" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="2.5in"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_round"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal"
+android:layout_marginTop="0.35in"
+            android:onClick="BuyComponent"
+            android:text="Buy Components" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="2.5in"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_round"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0.35in"
+            android:onClick="to_acceso"
+            android:text="Accessories" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/menu_round"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2.5dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:onClick="profile"
+            android:clickable="true"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="cart"
+            android:src="@drawable/ic_baseline_shopping_cart_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:onClick="Home"
+            android:src="@drawable/ic_baseline_home_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:onClick="chat"
+            android:src="@drawable/ic_baseline_message_24"
+            android:translationY="1dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="toNotification"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/ic_baseline_notifications_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

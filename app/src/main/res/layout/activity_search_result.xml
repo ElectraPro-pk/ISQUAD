@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mate"
+    android:fitsSystemWindows="true"
+    tools:context=".search_result">
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+      android:layout_width="match_parent"
+      android:padding="5dp"
+      android:layout_height="wrap_content"
+      >
+
+      <ImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/abc_vector_test"
+          android:background="@drawable/btn_round"
+          android:layout_gravity="start"
+          android:clickable="true"
+          android:onClick="backtohome"
+          />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/light"
+    android:layout_gravity="center"
+    android:text="Filter Result"
+    android:fontFamily="@font/poppins_bold"
+    android:textSize="20dp"
+    />
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Price Range"
+            android:fontFamily="@font/poppins_bold"
+            />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="MIN"
+                android:layout_gravity="start"
+                android:inputType="numberDecimal"
+                android:id="@+id/min"
+                android:textColor="@color/mate"
+                android:padding="10dp"
+                android:enabled="false"
+                android:text="0"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/input_round_light"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="MAX"
+                android:inputType="numberDecimal"
+                android:id="@+id/max"
+                android:text="0"
+                android:gravity="center"
+                android:enabled="false"
+                android:textColor="@color/mate"
+                android:padding="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_round_light"
+                />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeSeekbar"
+            android:layout_marginTop="0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/ic_market_bg"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searched"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

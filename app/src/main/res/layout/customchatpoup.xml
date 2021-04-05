@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:backgroundTint="@color/blueDark"
+    android:background="@drawable/btn_round">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        android:layout_gravity="end"
+        android:textSize="20dp"
+        android:text="X"
+        android:textColor="@color/themeRed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:textSize="20dp"
+        android:text="Notification"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    android:id="@+id/message" >
+
+</androidx.recyclerview.widget.RecyclerView>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/messageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your message"
+        android:layout_marginEnd="50dp"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:autoSizeMaxTextSize="15dp"
+        android:layout_gravity="start" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send_24"
+        android:layout_gravity="end"
+        android:id="@+id/sendBtn"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

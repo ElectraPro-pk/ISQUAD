@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_what_do_you_plan_to_play"
+    android:fitsSystemWindows="true"
+    tools:context=".builtbt">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/abc_vector_test"
+        android:background="@drawable/btn_round"
+        android:clickable="true"
+        android:onClick="previous"
+        android:translationY="67dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/imagebt"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginStart="20dp"
+            android:text="CHOOSE YOUR COMPONENTS"
+            android:fontFamily="@font/poppins_bold"
+            android:drawableLeft="@drawable/check"
+            android:drawablePadding="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginStart="20dp"
+            android:text="GET THE PRICE"
+            android:fontFamily="@font/poppins_bold"
+            android:drawableLeft="@drawable/check"
+            android:drawablePadding="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginStart="20dp"
+            android:text="GET YOUR PC BUILT"
+            android:fontFamily="@font/poppins_bold"
+            android:drawableLeft="@drawable/check"
+            android:drawablePadding="10dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_round"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="10dp"
+        android:onClick="BuildPc"
+        android:text="Build PC" />
+</androidx.appcompat.widget.LinearLayoutCompat>

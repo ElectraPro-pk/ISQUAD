@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:backgroundTint="@color/blueDark"
+
+    android:background="@drawable/btn_round">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        android:layout_gravity="end"
+        android:textSize="20dp"
+        android:text="X"
+        android:textColor="@color/themeRed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="14dp"
+        android:text="Notification"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:textSize="11dp"
+        android:justificationMode="inter_word"
+        android:text="Description"
+        android:textColor="@color/light"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_code_verification"
+    tools:context=".CodeVerification">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="140dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_height="140dp"
+        android:src="@mipmap/main_lg_foreground" />
+
+    <!--EditText
+        android:id="@+id/otp"
+        android:inputType="numberDecimal"
+        android:hint="OTP"
+        android:layout_width="2.5in"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/text_outline"
+        android:gravity="center_horizontal"
+        android:drawablePadding="10dp"
+        android:ems="9"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="10dp"
+        android:requiresFadingEdge="horizontal"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="40px"
+         /-->
+
+    <com.chaos.view.PinView
+        android:id="@+id/otp"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="150dp"
+        android:itemBackground="#fff"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:cursorVisible="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="#000"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="50dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="10dp"
+        app:itemWidth="50dp"
+        app:lineColor="#000"
+        app:lineWidth="2dp"
+        android:layout_gravity="center"
+        app:viewType="rectangle" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="2in"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0.5in"
+        android:background="@drawable/btn_round"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="ManualVerify"
+        android:padding="15dp"
+        android:text="Verify" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

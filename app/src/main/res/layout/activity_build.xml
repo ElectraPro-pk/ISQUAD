@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".build">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_round"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="YOUR BUILD"
+        android:textSize="20dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:paddingBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Mother Board"
+                android:textSize="20dp" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/mb_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="A"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/mb_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="264"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Processor"
+                android:textSize="20dp" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/pr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="A"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/pr_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="264"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Graphics"
+                android:textSize="20dp" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/gr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="A"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/gr_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="264"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Casing"
+                android:textSize="20dp" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/cas_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="A"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/cas_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="264"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Cooling"
+                android:textSize="20dp" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/c_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="A"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/c_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="264"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Power"
+                android:textSize="20dp" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/pow_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="A"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/pow_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="264"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Storage"
+                android:textSize="20dp" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/st_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="A"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/st_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="264"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="12dp"
+                android:text="Ram"
+                android:textSize="20dp" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/r_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="A"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/r_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_bold"
+                    android:padding="12dp"
+                    android:text="264"
+                    android:textColor="@color/primary"
+                    android:textSize="12dp" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_round"
+        android:padding="5dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="12dp"
+            android:text="Total"
+            android:textColor="@color/themeRed"
+            android:textSize="18dp" />
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_cart"
+            android:onClick="MakeOrder"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="12dp"
+            android:text="1181"
+            android:textColor="@color/themeRed"
+            android:textSize="18dp" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
